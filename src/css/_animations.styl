@@ -18,7 +18,7 @@
     transform translateX(0)
  
 .order-leave
-  transition all 0.5s
+  transition all .5s
   transform translateX(0)
   &.order-leave-active
     transform translateX(120%)
@@ -26,7 +26,16 @@
     padding 0
 
 .count-enter
-  transition all 2.5s
+  transition all .25s
   transform translateY(100%)
   &.count-enter-active
     transform translateY(0)
+
+.count-leave
+  transition all .25s
+  position absolute
+  left 0
+  bottom 0
+  transform translateY(0)
+  &.count-leave-active
+    transform translateY(-100%)
