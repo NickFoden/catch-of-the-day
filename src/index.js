@@ -19,6 +19,4 @@ const Root = () => {
     )
 }
 
-
-
 render(<Root />, document.querySelector('#main'));
